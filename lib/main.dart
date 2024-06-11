@@ -20,11 +20,11 @@ void main() async {
   //     requestSoundPermission: true,
   //     onDidReceiveLocalNotification: (int id, String? title, String? body, String? payload) async {});
   var initializationSettings = InitializationSettings(android: initializationSettingsAndroid,);
-  // await flutterLocalNotificationsPlugin.initialize(initializationSettings, onSelectNotification: (String? payload) async {
-  //   if (payload != null) {
-  //     debugPrint('notification payload: ' + payload);
-  //   }
-  // });
+  await flutterLocalNotificationsPlugin.initialize(initializationSettings, onSelectNotification: (String? payload) async {
+    if (payload != null) {
+      debugPrint('notification payload: ' + payload);
+    }
+  });
   runApp(MyApp());
 }
 

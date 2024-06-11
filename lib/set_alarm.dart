@@ -131,7 +131,8 @@ class _SetAlarmState extends State<SetAlarm> {
                                         setState(() {
                                           switchstate = value;
                                         });
-                                        print(value);
+                                      
+                                        
                                       },
                                       
                                         trackColor: const Color.fromARGB(
@@ -337,9 +338,9 @@ class _SetAlarmState extends State<SetAlarm> {
       'alarm_notif',
       'alarm_notif',
       channelDescription: 'Channel for Alarm notification',
-      icon: 'clock_logo',
+      icon: 'clock_icon',
       sound: RawResourceAndroidNotificationSound('alarm_sound'),
-      largeIcon: DrawableResourceAndroidBitmap('clock_logo'),
+      largeIcon: DrawableResourceAndroidBitmap('clock_icon'),
     );
 
     var platformChannelSpecifics = NotificationDetails(
